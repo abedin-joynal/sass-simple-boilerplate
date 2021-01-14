@@ -1,0 +1,26 @@
+
+@import "./variables";
+@import "./header";
+
+.about-me {
+    @include flexCenter(column);
+    height: 20vh;
+    background: #00000026;
+    margin-bottom : 1px;
+    margin-top: 1px;
+    padding: 5px;
+    p {
+        font-weight: bold;
+        font-size: 20px;    
+    }
+}
+.contact {
+    @include flexCenter(row);
+    @extend .about-me;
+    a {
+        padding-left: 5px;
+        margin: 5px;
+        border: 1px solid $headerBgColor;
+        border-radius: 5px;
+    }
+}
