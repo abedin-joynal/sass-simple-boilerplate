@@ -4,11 +4,16 @@
   "description": "\tSass Boilerplate",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass scss/style.scss css/style.css -w"
+    "win": "start index.html",
+    "lin": "open index.html",
+    "compile:sass": "node-sass scss/style.scss css/style.css"
   },
   "author": "Joynal Abedin",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "open": "^7.3.1"
   }
 }
