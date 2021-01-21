@@ -6,14 +6,18 @@
   "scripts": {
     "win": "start index.html",
     "lin": "open index.html",
-    "compile:sass": "node-sass scss/style.scss css/style.css"
+    "compile:sass": "node-sass scss/style.scss css/style.css -w --output-style compressed",
+    "sync": "browser-sync --server --files css/*.css",
+    "dev": "browser-sync --server --files css/*.css --no-notify --no-open"
   },
   "author": "Joynal Abedin",
   "license": "ISC",
   "dependencies": {
+    "browser-sync": "^2.26.13",
     "node-sass": "^5.0.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.7",
     "open": "^7.3.1"
   }
 }
